@@ -34,8 +34,8 @@ def collapse(L):
     return L1
 
 def prepocessing():
-    movies = pd.read_csv('/home/parwaan/Desktop/mihir/recommender/dataset/tmdb_5000_movies.csv')
-    credits = pd.read_csv('/home/parwaan/Desktop/mihir/recommender/dataset/tmdb_5000_credits.csv') 
+    movies = pd.read_csv('./dataset/tmdb_5000_movies.csv')
+    credits = pd.read_csv('./dataset/tmdb_5000_credits.csv') 
     movies = movies.merge(credits,on='title')
     movies = movies[['movie_id','title','overview','genres','keywords','cast','crew']]
     movies.dropna(inplace=True)
