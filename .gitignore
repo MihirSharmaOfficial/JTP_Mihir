@@ -1,11 +1,5 @@
 venv/ 
 
-recommender/db.sqlite3
-
-**/__pycache__/*
-
-**/migrations/__pycache__/
-
 recommender/third_party/
 
 .vscode/
