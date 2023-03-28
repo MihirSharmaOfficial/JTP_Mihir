@@ -1,0 +1,32 @@
+venv/ 
+
+recommender/db.sqlite3
+
+**/__pycache__/*
+
+**/migrations/__pycache__/
+
+recommender/third_party/
+
+.vscode/
+
+JTP_JPN/node_modules
+JTP_JPN/.pnp
+JTP_JPN/.pnp.js
+
+# testing
+JTP_JPN/coverage
+
+# production
+JTP_JPN/build
+
+# misc
+JTP_JPN/.DS_Store
+JTP_JPN/.env.local
+JTP_JPN/.env.development.local
+JTP_JPN/.env.test.local
+JTP_JPN/.env.production.local
+
+JTP_JPN/npm-debug.log*
+JTP_JPN/yarn-debug.log*
+JTP_JPN/yarn-error.log*
