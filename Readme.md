@@ -6,7 +6,7 @@
 sudo docker build -t debian .
 ```
 ```
-sudo docker run debian
+sudo docker run -p 3000:3000 -p 8000:8000 debian
 ```
 
 Once the following commands have successfully executed, you will visit the following url for accessing the movie recommender.
