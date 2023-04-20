@@ -19,7 +19,5 @@ The page will ask for login credentials. Use the following login credentials:
 Email: mihir@gmail.com
 Password: mihir@1234
 ```
-
-The workflow of our recommender system works as follows: 
-
+## Workflow Diagram: 
 ![Flow Digram](https://github.com/MihirSharmaOfficial/JTP_Mihir/blob/master/assets/WorkflowDiagram.png?raw=true)
