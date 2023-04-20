@@ -22,4 +22,4 @@ Password: mihir@1234
 
 The workflow of our recommender system works as follows: 
 
-![Flow Digram](https://github.com/MihirSharmaOfficial/JTP_Mihir/assets/master/WorkflowDigram.png?raw=true)
+![Flow Digram](https://github.com/MihirSharmaOfficial/JTP_Mihir/blob/master/assets/WorkflowDiagram.png?raw=true)
