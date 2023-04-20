@@ -2,6 +2,7 @@
 
 ## Instructions to run the project: 
  Use the following commands to run the project, once it has been cloned.
+ Note: To run the below commands in windows, don't write 'sudo' at the beginning of the command. 
 ```
 sudo docker build -t debian .
 ```
@@ -18,3 +19,7 @@ The page will ask for login credentials. Use the following login credentials:
 Email: mihir@gmail.com
 Password: mihir@1234
 ```
+
+The workflow of our recommender system works as follows: 
+
+![Flow Digram](https://github.com/MihirSharmaOfficial/JTP_Mihir/assets/master/WorkflowDigram.png?raw=true)
