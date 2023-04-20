@@ -1,7 +1,7 @@
 ## This is the movie recommender system.
 
 ## Instructions to run the project: 
- Use the following commands to run the project, once it has been cloned.
+ Use the following commands to run the project, once it has been cloned.<br />
  Note: To run the below commands in windows, don't write 'sudo' at the beginning of the command. 
 ```
 sudo docker build -t debian .
