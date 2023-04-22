@@ -6,6 +6,7 @@ from login.serializers import *
 from rest_framework.permissions import IsAuthenticated
 
 class RegistrationView(APIView):
+    # Function to create a new user. 
     def post(self, request, *args, **kwargs):
         requester = {
             'email': request.data.get('email', None),
@@ -29,6 +30,7 @@ class RegistrationView(APIView):
 
 class UserView(APIView):
     permission_classes = [IsAuthenticated]
+    # Function to get the details of the user. 
     def get(self, request, *args, **kwargs):
         user = request.user
         userSerialized = UserSerializer(user)
@@ -37,6 +39,7 @@ class UserView(APIView):
 
 class PasswordReset(APIView):
     permission_classes = [IsAuthenticated]
+    # Funciton to reset the password of the user. 
     def post(self, request, *args, **kwargs):
         cuser = request.user
         if cuser != None:

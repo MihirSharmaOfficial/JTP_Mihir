@@ -8,9 +8,9 @@ from recommender_sys import recommend
 
 # Create your views here.
 
-
 class MovieList(APIView):
     permission_classes=[IsAuthenticated]
+    # Function to supply the list of all movies. 
     def get(self, request, *args, **kwargs):
         movies = Movies.objects.all()
         serializer = MovieSerializer(movies, many= True)
@@ -19,6 +19,7 @@ class MovieList(APIView):
 
 class Recommender(APIView):
     permission_classes=[IsAuthenticated]
+    # Function to provide a list of 5 recommended movies based on the input movie. 
     def post(self, request, *args, **kwargs):
         movie = request.data.get('movie', None)
         recommList = recommend(movie)

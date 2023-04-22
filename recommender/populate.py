@@ -1,3 +1,5 @@
+# This file contains the logic to populate the database from the available csv files.  
+
 import csv
 from movies.models import *
 

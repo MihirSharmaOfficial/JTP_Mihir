@@ -1,3 +1,4 @@
+# This file contains the defination for the database tables realted to the users.  
 from tabnanny import verbose
 from django.db import models
 from django.contrib.auth.models import AbstractBaseUser, BaseUserManager
