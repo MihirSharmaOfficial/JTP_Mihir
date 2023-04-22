@@ -34,6 +34,8 @@ def collapse(L):
         L1.append(i.replace(" ",""))
     return L1
 
+
+# This function is used to process the movie data before applying cosine similarity.
 def prepocessing():
     movies = pd.read_csv('./dataset/tmdb_5000_movies.csv')
     credits = pd.read_csv('./dataset/tmdb_5000_credits.csv') 
@@ -56,8 +58,9 @@ def prepocessing():
     new['tags'] = new['tags'].apply(lambda x: " ".join(x))
     return new
 
+# This function returns a list of 5 recommended movies based on the input movie. 
 def recommend(movie):
-    new = prepocessing()
+    new = prepocessing()   
     cv = CountVectorizer(max_features=5000,stop_words='english')
     vector = cv.fit_transform(new['tags']).toarray()
     vector.shape

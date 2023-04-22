@@ -4,6 +4,7 @@ import csv
 from movies.models import *
 
 
+#  Creates a new entry in the 'movies' table in the database. 
 def createEntry(movie_id, title, genres):
     print(movie_id)
     movie = Movies.objects.create(
@@ -12,6 +13,7 @@ def createEntry(movie_id, title, genres):
         genres = genres
     )
 
+# Used to Read the CSV File contains the movie details. 
 def readCSV(path_to_csv):
     with open(path_to_csv, 'r') as file_obj:
         read_obj = csv.reader(file_obj)
