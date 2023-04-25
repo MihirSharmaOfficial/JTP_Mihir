@@ -1,17 +1,19 @@
 # This File contains the recommender logic. 
-import numpy as np 
-import pandas as pd
-import ast
-from sklearn.feature_extraction.text import CountVectorizer
-from sklearn.metrics.pairwise import cosine_similarity
 
+import numpy as np # for linear algebra
+import pandas as pd # for data processing
+import ast # literal_eval function in this module has been used to get data in desired format
+from sklearn.feature_extraction.text import CountVectorizer # vectorization
+from sklearn.metrics.pairwise import cosine_similarity # cosine similarity
 
+# This function is used to modify the genre data.
 def convert(text):
     L = []
     for i in ast.literal_eval(text):
         L.append(i['name']) 
     return L 
 
+# This function is used to modify the cast data.
 def convert3(text):
     L = []
     counter = 0
@@ -21,6 +23,7 @@ def convert3(text):
         counter+=1
     return L 
 
+# This function is used get the director's name.
 def fetch_director(text):
     L = []
     for i in ast.literal_eval(text):
@@ -28,6 +31,7 @@ def fetch_director(text):
             L.append(i['name'])
     return L 
 
+# This function is used to remove the spaces between the words.
 def collapse(L):
     L1 = []
     for i in L:
